@@ -1,14 +1,6 @@
-# ROS2 workspace ignore patterns
 build/
 install/
 log/
-
-# Python
-__pycache__/
-*.pyc
-
-# IDE
-.vscode/
-
-# OS
-.DS_Store
+robot/
+src/robotnik_description/
+src/robotnik_sensors/
