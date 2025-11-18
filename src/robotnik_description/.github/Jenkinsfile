@@ -1,0 +1,5 @@
+rosPipeline(
+  rosdistro: getDistroFromBranch(),
+  upstreamProjects: 'robotnik_sensors/ros-devel',
+  upload: needUpload(),
+)

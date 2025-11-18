@@ -1,6 +1,3 @@
 build/
 install/
 log/
-robot/
-src/robotnik_description/
-src/robotnik_sensors/

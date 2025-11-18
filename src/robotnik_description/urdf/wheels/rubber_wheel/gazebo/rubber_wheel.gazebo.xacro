@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro
+    name="rubber_wheel_gazebo"
+    params="prefix">
+    <gazebo reference="${prefix}wheel_link">
+      <!-- <mu1>1.0</mu1>
+      <mu2>1.0</mu2>
+      <fdir1>1 0 0</fdir1>
+      <kp>0.0001</kp>
+      <kd>1.0</kd> -->
+      <material>Gazebo/Yellow</material>
+      <minDepth>0.1</minDepth>
+    </gazebo>
+    <gazebo reference="${prefix}wheel_tire_link">
+      <mu1>1.5</mu1>
+      <mu2>2.5</mu2>
+      <fdir1>1 0 0</fdir1>
+      <kp>100000</kp>
+      <kd>5.0</kd>
+      <maxVel>0.1</maxVel>
+      <minDepth>0.003</minDepth>
+      <slip1>0.05</slip1>
+      <slip2>0.05</slip2>
+      <material>Gazebo/Gray</material>
+    </gazebo>
+  </xacro:macro>
+</robot>
